@@ -7,12 +7,16 @@ export function MainNav() {
   return (
     <div className="flex gap-4 md:gap-6">
       <Link href="/" className="flex items-center space-x-2">
-        <div className="w-[40px] h-[40px] relative">
+        <div
+          className="relative h-[40px] w-[40px] border-2 border-gray-800"
+          //
+        >
           <Image
             src={"https://i.ibb.co/WnmdzMx/faircoast.png"}
+            // src={"https://i.ibb.co/3yLg2tY/faircoast2.png"}
             alt={"logo"}
             fill
-            className="h-fit w-full object-contain mix-blend-lighten"
+            // className="h-fit w-full object-contain mix-blend-lighten"
           />
         </div>
         <span className="inline-block text-xl font-bold">
