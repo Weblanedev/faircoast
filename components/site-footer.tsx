@@ -18,8 +18,12 @@ export function SiteFooter() {
             </div>
           ))}
         </nav>
+        <div className="-mb-6 columns-2 flex flex-col justify-center items-center text-sm">
+          <p>Reach out to us at +2349083536888,</p>
+          <p>4, Yemi Kayode Street, Akobo Estate, Ibadan, Oyo State, Nigeria</p>
+        </div>
         <Link
-          href="https://www.fullstack.so"
+          href="http://faircoast.org/"
           className="mt-10 block text-center text-xs leading-5"
         >
           &copy; {new Date().getFullYear()} {siteConfig.name} LLC. All rights
