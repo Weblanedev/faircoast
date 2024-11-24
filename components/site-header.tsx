@@ -2,16 +2,16 @@
 
 import Link from "next/link"
 import { usePathname, useRouter, useSearchParams } from "next/navigation"
-import { Edit, ShoppingBag } from "lucide-react"
+// import { Edit, ShoppingBag } from "lucide-react"
 import { useShoppingCart } from "use-shopping-cart"
 
-import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/input"
+import { siteConfig } from "@/config/site"
+// import { Button } from "@/components/ui/button"
+// import { Input } from "@/components/ui/input"
 import { MainNav } from "@/components/main-nav"
-import { ThemeToggle } from "@/components/theme-toggle"
+// import { ThemeToggle } from "@/components/theme-toggle"
 
-;import { siteConfig } from "@/config/site"
-(" ")
+;(" ")
 
 export function SiteHeader() {
   const pathname = usePathname()
@@ -45,7 +45,7 @@ export function SiteHeader() {
             </div>
           ))}
         </nav>
-        <div className="flex items-center space-x-1">
+        {/* <div className="flex items-center space-x-1">
           <Link href="/cart">
             <Button size="sm" variant="ghost">
               <ShoppingBag className="h-5 w-5" />
@@ -54,7 +54,7 @@ export function SiteHeader() {
             </Button>
           </Link>
           <ThemeToggle />
-        </div>
+        </div> */}
       </div>
     </header>
   )
